@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Merve Ayliz | Deep Ocean</title>
+    <link href="https://fonts.googleapis.com/css2?family=Syncopate:wght@700&family=Inter:wght@300;400;600&family=Allison&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+
+    <div class="ocean-floor">
+        <div class="surface-reflection"></div>
+        <div class="water-caustics"></div>
+    </div>
+
+    <svg style="display:none;">
+        <filter id="turbulence" x="0" y="0" width="100%" height="100%">
+            <feTurbulence type="fractalNoise" baseFrequency="0.01 0.01" numOctaves="3" seed="2">
+                <animate attributeName="baseFrequency" dur="30s" values="0.01 0.01;0.02 0.05;0.01 0.01" repeatCount="indefinite" />
+            </feTurbulence>
+            <feDisplacementMap in="SourceGraphic" scale="30" />
+        </filter>
+    </svg>
+
+    <main class="wrapper">
+        <div class="luxury-card">
+            <div class="card-inner">
+                <header>
+                    <p class="role-tag">Frontend Developer & Designer</p>
+                    <h1 class="main-name">MERVE AYLİZ</h1>
+                </header>
+
+                <div class="divider"></div>
+
+                <input type="checkbox" id="lang-toggle" class="lang-hide">
+                <section class="bio-container">
+                    <p class="bio en">A <b>Web Design & Coding Student</b> blending AI and aesthetics. Exploring the depths of frontend development.</p>
+                    <p class="bio tr">Yapay zeka ve estetiği harmanlayan bir <b>Web Tasarım ve Kodlama Öğrencisiyim.</b> Frontend dünyasının derinliklerini keşfediyorum.</p>
+                </section>
+
+                <div class="lang-controls">
+                    <label for="lang-toggle" class="lang-label">
+                        <span class="ln-btn">Switch to English</span>
+                        <span class="ln-btn">Türkçe'ye Geç</span>
+                    </label>
+                </div>
+
+                <nav class="action-grid">
+                    <a href="https://github.com/merveayliz" target="_blank" class="btn-main">GitHub</a>
+                    <a href="https://www.linkedin.com/in/ayliz-azaklı-74579b318/" target="_blank" class="btn-main">LinkedIn</a>
+                    <a href="https://merveayliz.github.io/ayliz-dev-/" target="_blank" class="btn-main">Ayliz Dev</a>
+                </nav>
+            </div>
+        </div>
+    </main>
+
+    <footer class="footer-clean">
+        Designed by <span>Merve</span>
+    </footer>
+
+</body>
+</html>
