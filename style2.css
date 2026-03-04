@@ -132,9 +132,6 @@ body {
 .footer-clean span { color: var(--water-cyan); font-weight: bold; }
 
 
-.lang-hide { display: none; }
-.bio.tr, .lang-hide:checked ~ .card-inner .bio-container .en { display: none; }
-.lang-hide:checked ~ .card-inner .bio-container .tr { display: block; }
 
 @media (max-width: 480px) {
     
@@ -198,4 +195,5 @@ body {
     .luxury-card {
         width: 92vw;
     }
+
 }
