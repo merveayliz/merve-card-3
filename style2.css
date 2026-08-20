@@ -17,7 +17,6 @@ body {
     font-family: 'Inter', sans-serif;
 }
 
-
 .ocean-floor {
     position: absolute;
     inset: 0;
@@ -40,7 +39,6 @@ body {
     background: radial-gradient(circle at 50% -20%, rgba(0, 212, 255, 0.2), transparent 70%);
 }
 
-
 .luxury-card {
     position: relative;
     width: 480px;
@@ -52,7 +50,6 @@ body {
     border: 1px solid rgba(255, 255, 255, 0.05);
     transition: 0.5s ease;
 }
-
 
 .luxury-card:hover {
     transform: translateY(-10px) scale(1.02);
@@ -66,14 +63,12 @@ body {
     text-align: center;
 }
 
-
 .role-tag {
     font-size: 0.65rem;
     letter-spacing: 5px;
     color: #555;
     margin-bottom: 15px;
 }
-
 .main-name {
     font-family: 'Syncopate', sans-serif;
     font-size: 2.6rem;
@@ -82,7 +77,6 @@ body {
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
-
 .divider {
     height: 1px; width: 50px;
     background: var(--water-cyan);
@@ -95,7 +89,6 @@ body {
     line-height: 1.8;
     margin-bottom: 30px;
 }
-
 
 .action-grid {
     display: flex;
@@ -121,7 +114,6 @@ body {
     box-shadow: 0 0 25px rgba(255, 255, 255, 0.3);
 }
 
-
 .footer-clean {
     position: fixed;
     bottom: 30px;
@@ -131,27 +123,19 @@ body {
 }
 .footer-clean span { color: var(--water-cyan); font-weight: bold; }
 
-
-
 @media (max-width: 480px) {
-    
     .wrapper {
         padding: 30px 25px; 
     }
-
-  
     .luxury-card, .cyber-card {
         width: 88vw; 
         max-width: 340px; 
         border-radius: 35px; 
         margin: 0 auto;
     }
-
-    
     .card-inner, .inner-content {
         padding: 35px 20px; 
     }
-
     
     .main-name {
         font-size: 1.8rem !important; 
@@ -195,5 +179,4 @@ body {
     .luxury-card {
         width: 92vw;
     }
-
 }
